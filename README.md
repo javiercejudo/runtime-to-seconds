@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/javiercejudo/runtime-to-seconds/badge.svg?branch=master)](https://coveralls.io/r/javiercejudo/runtime-to-seconds?branch=master)
 [![Code Climate](https://codeclimate.com/github/javiercejudo/runtime-to-seconds/badges/gpa.svg)](https://codeclimate.com/github/javiercejudo/runtime-to-seconds)
 
-Find closing symbol (parentheses, curly braces...)
+Converts a string `hh:mm:ss` to seconds
 
 ## Install
 
