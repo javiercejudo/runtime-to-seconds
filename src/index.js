@@ -4,7 +4,7 @@
 
 var SEPARATOR = ':';
 
-function smhToseconds(pUnit, cUnit, index) {
+function smhToSeconds(pUnit, cUnit, index) {
   return pUnit + cUnit * Math.pow(60, index);
 }
 
@@ -15,5 +15,5 @@ function hmsTosmh(str) {
 }
 
 module.exports = function(runtime) {
-  return hmsTosmh(runtime).reduce(smhToseconds);
+  return hmsTosmh(runtime).reduce(smhToSeconds);
 };
