@@ -4,12 +4,16 @@
 
 require('should');
 
-var runtimeToSeconds = require('../src/');
+var fn = require('../src/');
 
 describe('runtime to seconds', function() {
+  it('should be unary', function() {
+    fn.length.should.be.exactly(1);
+  });
+
   it('converts hh:mm:ss or mm:ss to seconds', function() {
-    runtimeToSeconds('1:25:46').should.be.exactly(5146);
-    runtimeToSeconds('25:46').should.be.exactly(1546);
-    runtimeToSeconds('46').should.be.exactly(46);
+    fn('1:25:46').should.be.exactly(5146);
+    fn('25:46').should.be.exactly(1546);
+    fn('46').should.be.exactly(46);
   });
 });
